@@ -4,3 +4,9 @@
 
 # Conventional directory for build output.
 build/
+
+# Environment file.
+lib/src/internal/env.dart
+
+# Todo files.
+*.todo
