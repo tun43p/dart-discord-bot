@@ -7,3 +7,6 @@ build/
 
 # Environment file.
 lib/src/internal/env.dart
+
+# Todo files.
+*.todo
