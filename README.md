@@ -12,7 +12,7 @@ Just a Discord bot.
 
 ## Versioning
 
-**1.0.0**
+**1.0.1**
 
 ## Authors
 
