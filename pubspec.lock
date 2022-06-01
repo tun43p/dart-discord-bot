@@ -85,6 +85,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.2"
+  http:
+    dependency: transitive
+    description:
+      name: http
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.13.4"
   http_multi_server:
     dependency: transitive
     description:
@@ -155,6 +162,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
+  nyxx:
+    dependency: "direct main"
+    description:
+      name: nyxx
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.4.2"
   package_config:
     dependency: transitive
     description:
