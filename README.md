@@ -1,10 +1,10 @@
-# Dartodo
+# Dart Discord Bot
 
 Just a Discord bot.
 
 ## Table of contents
 
-- [Dartodo](#dartodo)
+- [Dart Discord Bot](#dart-discord-bot)
   - [Table of contents](#table-of-contents)
   - [Versioning](#versioning)
   - [Authors](#authors)
