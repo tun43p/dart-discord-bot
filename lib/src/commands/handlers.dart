@@ -7,7 +7,7 @@ void onCommand(
   String trigger,
   Function(IMessageReceivedEvent event) callback,
 ) {
-  bot.eventsWs.onMessageReceived.listen((event) {
+  bot.eventsWs.onMessageReceived.listen((IMessageReceivedEvent event) {
     if (event.message.content == '$prefix$trigger') callback(event);
   });
 }

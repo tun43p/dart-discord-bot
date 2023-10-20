@@ -3,21 +3,22 @@ import 'package:nyxx/nyxx.dart';
 
 late dartagnan.Bot bot;
 
-void main(List<String> arguments) {
+Future<void> main(List<String> arguments) async {
   bot = NyxxFactory.createNyxxWebsocket(
     dartagnan.token,
     GatewayIntents.all,
   )
     ..registerPlugin(Logging())
     ..registerPlugin(CliIntegration())
-    ..registerPlugin(IgnoreExceptions())
-    ..connect();
+    ..registerPlugin(IgnoreExceptions());
 
-  dartagnan.onCommand(bot, 'ping', (event) {
-    event.message.channel.sendMessage(MessageBuilder.content('Pong !'));
+  await bot.connect();
+
+  dartagnan.onCommand(bot, 'ping', (IMessageReceivedEvent event) async {
+    await event.message.channel.sendMessage(MessageBuilder.content('Pong !'));
   });
 
-  dartagnan.onCommand(bot, 'pong', (event) {
-    event.message.channel.sendMessage(MessageBuilder.content('Ping !'));
+  dartagnan.onCommand(bot, 'pong', (IMessageReceivedEvent event) async {
+    await event.message.channel.sendMessage(MessageBuilder.content('Ping !'));
   });
 }
